@@ -1,0 +1,115 @@
+
+/* Reset e Mescla de padding e margin*/
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+/* Menu */
+header{
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 1;
+}
+
+nav#menu-nav{
+	width: 100%;
+	text-align: center;
+	background-color: #333;
+}
+
+ul#menu-lista{
+	list-style-type: none;
+	width: 50%;
+	margin: auto;
+	overflow: hidden;
+
+}
+
+a.menu-link{
+	text-decoration: none;
+	color: white;
+	width: 20%;
+	padding: 2% 0;
+	display: block;
+	float: left;
+}
+
+a.menu-link:visited{
+	color: white;
+}
+
+a.menu-link:hover{
+	background-color: rgba(255, 255, 255, 0.1);	
+}
+
+/* Geral */
+.container{
+	position: relative;
+	margin: auto;
+	width: 60%;
+	padding: 0;
+}
+
+h1.titulos-secao{
+	font-size: 3em;
+	text-align: center;
+	margin: 10% 0;
+}
+
+/* Home */
+
+section#home{
+	position: relative;
+	background-color: black;
+	height: 1080px;
+
+}
+
+img#img-principal{
+	width: 100%;
+	opacity: 0.5;
+}
+
+h1#titulo-principal{
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -330%);
+	color: white;
+	font-size: 3em;
+	text-align: center;
+}
+
+/* Quem Somos */
+p.descricao-quemSomos{
+	text-align: justify;
+}
+
+img.img-quemSomos{
+	max-width: 100%;
+	height: auto;
+	margin: 0;
+	padding: 0;
+}
+
+/* Serviços */
+
+figure.polaroid{
+	background-color: white;
+	box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);	
+	text-align: center;
+}
+
+.legenda{
+	text-align: center;
+	padding: 10px 20px;
+}
+
+/* Obras */

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Principal</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../css/estilo.css"/>
+	<link rel="stylesheet" href="../css/grid.css"/>
+</head>
+<body>
+	<header>
+		<nav id="menu-nav">
+			<ul id="menu-lista">
+				<li class="menu-item">
+					<a href="#home" class="menu-link">Home</a>
+				</li>
+				<li class="menu-item">
+					<a href="#quemSomos" class="menu-link">Quem Somos</a>
+				</li>
+				<li class="menu-item">
+					<a href="#servicos" class="menu-link">Serviços</a>
+				</li>
+				<li class="menu-item">
+					<a href="#obras" class="menu-link">Obras</a>
+				</li>
+				<li class="menu-item">
+					<a href="#contato" class="menu-link">Contato</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	
+	<section id="home">
+		<img id="img-principal" src="../img/industria.jpg" alt="Foto da indústria" width="1340" height="1080"/>
+		<h1 id="titulo-principal">Sistemas e Soluções para Indústrias</h1>
+	</section>
+	
+	<div id="quemSomos"></div>
+
+	<section class="container">
+
+		<h1 class="titulos-secao">Quem Somos</h1>
+
+		<div class="flex-row">
+
+			<div class="flex-column-6 flex-column">
+				<p class="descricao-quemSomos">Descrição de um texto explicando sobre a empresa. Ano que nasceu, quais os objetivos da empresa e área de atuação. Descrição de um texto explicando sobre a empresa. Ano que nasceu, quais os objetivos da empresa e área de atuação. Descrição de um texto explicando sobre a empresa. Ano que nasceu, quais os objetivos da empresa e área de atuação. Descrição de um texto explicando sobre a empresa. Ano que nasceu, quais os objetivos da empresa e área de atuação. Descrição de um texto explicando sobre a empresa. Ano que nasceu, quais os objetivos da empresa e área de atuação. Descrição de um texto explicando sobre a empresa. Ano que nasceu, quais os objetivos da empresa e área de atuação.Descrição de um texto explicando sobre a empresa. Ano que nasceu, quais os objetivos da empresa e área de atuação.Descrição de um texto explicando sobre a empresa. Ano que nasceu, quais os objetivos da empresa e área de atuação.</p>
+			</div>
+
+			<div class="flex-column-6 flex-column">
+				<figure>
+					<img class="img-quemSomos" src="../img/papagaio.png" alt="Foto do Papagaio bonito"/>
+				</figure>
+			</div>
+
+		</div>
+
+	</section>
+
+	<div id="servicos"></div>
+
+	<section class="container">
+
+		<h1 class="titulos-secao">Serviços</h1>
+	
+		<div class="flex-row">
+			<figure class="polaroid flex-column-6 flex-column">
+				<img src="../img/android.png" alt="Foto do android"/>
+				<figcaption class="legenda">Descrição do serviço</figcaption>
+			</figure>
+
+			<figure class="polaroid flex-column-6 flex-column">
+				<img src="../img/chrome.jpg" alt="Foto do google chrome"/>
+				<figcaption class="legenda">Descrição do serviço</figcaption>
+			</figure>
+		</div>
+
+		<div class="flex-row">
+			<figure class="polaroid flex-column-6 flex-column">
+				<img src="../img/android.png" alt="Foto do android"/>
+				<figcaption class="legenda">Descrição do serviço</figcaption>
+			</figure>
+
+			<figure class="polaroid flex-column-6 flex-column">
+				<img src="../img/manutencao.jpg" alt="Foto em manutenção"/>
+				<figcaption class="legenda">Descrição do serviço</figcaption>
+			</figure>
+		</div>
+	</section>
+
+	<div id="obras"></div>
+
+	<section class="container">
+		<h1 class="titulos-secao">Obras</h1>
+
+		<div>
+			<div>
+			    <div>1 / 3</div>
+			    <img src="" alt="Foto 1 do Slide show">
+			    <div>Caption Text</div>
+		 	</div>
+		</div>
+
+		<div>
+			<div>
+			    <div>2 / 3</div>
+			    <img src="" alt="Foto 2 do Slide show">
+			    <div>Caption Text</div>
+		 	</div>
+		</div>
+
+		<div>
+			<div>
+			    <div>3 / 3</div>
+			    <img src="" alt="Foto 3 do Slide show">
+			    <div>Caption Text</div>
+		 	</div>
+		</div>
+	</section>
+
+	<div class="container">
+		<section id="contato">
+			<h1>Contato</h1>
+
+			<form action="action_page.php" method="post">
+				
+				Nome: <br><input type="text" name="nome" placeholder="Seu nome"/><br/>
+				E-mail: <br><input type="email" name="email" placeholder="fulano@fulano.com"><br/>
+				Mensagem: <br><textarea name="msg" rows="10" cols="30" placeholder="Sua mensagem aqui..."></textarea><br>
+				<input type="submit" value="Enviar"/>
+
+			</form>
+		</section>
+	</div>
+
+	<div>
+		<footer>
+			<p>Powered by Juliano Américo</p>
+		</footer>
+	</div>
+	
+</body>
+</html>
