@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../css/estilo.css"/>
 	<link rel="stylesheet" href="../css/grid.css"/>
+	<link rel="stylesheet" href="../css/slideshow.css">
 </head>
 <body>
 	<header>
@@ -94,29 +95,33 @@
 	<section class="container">
 		<h1 class="titulos-secao">Obras</h1>
 
-		<div>
-			<div>
-			    <div>1 / 3</div>
-			    <img src="" alt="Foto 1 do Slide show">
-			    <div>Caption Text</div>
+		<div class="slideshow-container flex-row">
+			<div class="mySlides fade">
+			    <div class="numbertext">1 / 3</div>
+			    <img src="../img/img_fjords_wide.jpg" alt="Foto 1 do Slide show" class="img-slide">
+			    <div class="text">Primeiro</div>
 		 	</div>
+	
+			<div class="mySlides fade">
+			    <div class="numbertext">2 / 3</div>
+			    <img src="../img/img_mountains_wide.jpg" alt="Foto 2 do Slide show" class="img-slide">
+			    <div class="text">Segundo</div>
+		 	</div>
+
+			<div class="mySlides fade">
+			    <div class="numbertext">3 / 3</div>
+			    <img src="../img/img_nature_wide.jpg" alt="Foto 3 do Slide show" class="img-slide">
+			    <div class="text">Terceiro</div>
+		 	</div>	
 		</div>
 
-		<div>
-			<div>
-			    <div>2 / 3</div>
-			    <img src="" alt="Foto 2 do Slide show">
-			    <div>Caption Text</div>
-		 	</div>
-		</div>
+		<div style="text-align: center">
+		<span class="dot"></span>
+		<span class="dot"></span>
+		<span class="dot"></span>
+	</div>
 
-		<div>
-			<div>
-			    <div>3 / 3</div>
-			    <img src="" alt="Foto 3 do Slide show">
-			    <div>Caption Text</div>
-		 	</div>
-		</div>
+
 	</section>
 
 	<div class="container">
@@ -139,6 +144,32 @@
 			<p>Powered by Juliano Américo</p>
 		</footer>
 	</div>
+
+	<script>
+		var slideIndex = 0;//Actual slide
+		showSlides();//call the function below
+
+		function showSlides(){
+			var i;//Iterate var
+			var slides = document.getElementsByClassName("mySlides");
+			var dots = document.getElementsByClassName("dot");
+
+			for(i = 0; i < slides.length; i++){
+				slides[i].style.display = "none";
+			}
+
+			slideIndex++;
+
+			if(slideIndex > slides.length){slideIndex = 1}
+			for(i = 0; i < dots.length; i++){
+				dots[i].className = dots[i].className.replace(" active", "");
+			}
+
+			slides[slideIndex-1].style.display="block";
+			dots[slideIndex-1].className += " active";
+			setTimeout(showSlides, 3000);//Change every 2 seconds
+		}
+	</script>
 	
 </body>
 </html>
