@@ -118,3 +118,13 @@ img.img-slide{
 	max-width: 100%;
 	/*width: 70%;*/
 }
+
+/* Rodapé */
+
+footer#rodape{
+	background-color: rgba(0, 0, 0, 0.9);
+	color: white;
+	text-align: center;
+	padding: 10px;
+	margin-top: 15px;
+}
