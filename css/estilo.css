@@ -141,3 +141,20 @@ footer#rodape{
 	padding: 10px;
 	margin-top: 15px;
 }
+
+.icon{
+
+	margin-right: 5px;
+}
+
+a.icon-link:visited{
+	color: white;
+}
+
+a.icon-link:link{
+	color: white;
+}
+
+a.icon-link:hover{
+	color: white;
+}
