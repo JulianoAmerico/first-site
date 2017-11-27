@@ -128,9 +128,7 @@
 	<section class="container">
 		<h1 class="titulos-secao">Contato</h1>
 		
-		<div id="map" style="width: 100%; height: 400px;">
-			My map will go here	
-		</div>
+		<div id="googleMap" style="width:100%;height:400px;"></div>
 
 
 		<div class="flex-row formulario">
@@ -178,16 +176,17 @@
 		}
 
 		function myMap() {
-		    var mapOptions = {
-		        center: new google.maps.LatLng(-22.6379575, -47.1800989),
-		        zoom: 10,
-		        mapTypeId: google.maps.MapTypeId.HYBRID
-		    }
-			var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+		  var myCenter = new google.maps.LatLng(-22.6379575, -47.1800989);
+		  var mapCanvas = document.getElementById("googleMap");
+		  var mapOptions = {center: myCenter, zoom: 12};
+		  var map = new google.maps.Map(mapCanvas, mapOptions);
+		  var marker = new google.maps.Marker({position:myCenter});
+		  marker.setMap(map);
 		}
 	</script>
 
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+	 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBliroxlqRE79Yxx6uhWdWCZxto5wJ3YUc&callback=myMap" type="text/javascript">
+	 </script>
 	
 </body>
 </html>
