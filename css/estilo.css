@@ -1,12 +1,18 @@
 
 /* Reset e Mescla de padding e margin*/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
 * {
 	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
 }
 
 body {
 	margin: 0;
 	padding: 0;
+	background-color: gainsboro;
 }
 
 /* Menu */
@@ -54,12 +60,15 @@ a.menu-link:hover{
 	margin: auto;
 	width: 60%;
 	padding: 0;
+	
 }
 
 h1.titulos-secao{
 	font-size: 3em;
 	text-align: center;
 	margin: 10% 0;
+	text-transform: uppercase;
+	color: darkgray;
 }
 
 /* Home */
@@ -85,6 +94,7 @@ h1#titulo-principal{
 	color: white;
 	font-size: 3em;
 	text-align: center;
+	/* text-transform: uppercase; */
 }
 
 /* Quem Somos */
