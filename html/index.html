@@ -124,20 +124,27 @@
 
 	</section>
 
-	<div class="container">
-		<section id="contato">
-			<h1>Contato</h1>
+	<div id="contato"></div>
+	<section class="container">
+		<h1 class="titulos-secao">Contato</h1>
+		
+		<div id="map" style="width: 100%; height: 400px;">
+			My map will go here	
+		</div>
 
+
+		<div class="flex-row formulario">
 			<form action="action_page.php" method="post">
 				
-				Nome: <br><input type="text" name="nome" placeholder="Seu nome"/><br/>
-				E-mail: <br><input type="email" name="email" placeholder="fulano@fulano.com"><br/>
-				Mensagem: <br><textarea name="msg" rows="10" cols="30" placeholder="Sua mensagem aqui..."></textarea><br>
+				Nome: <br><input class="input-area" type="text" name="nome" placeholder="Seu nome"/><br/>
+				E-mail: <br><input class="input-area" type="email" name="email" placeholder="fulano@fulano.com"><br/>
+				Mensagem: <br><textarea class="input-area" name="msg" rows="10" cols="30" placeholder="Sua mensagem aqui..."></textarea><br>
 				<input type="submit" value="Enviar"/>
 
 			</form>
-		</section>
-	</div>
+		</div>
+	</section>
+	
 
 	<div>
 		<footer id="rodape">
@@ -169,7 +176,18 @@
 			dots[slideIndex-1].className += " active";
 			setTimeout(showSlides, 3000);//Change every 3 seconds
 		}
+
+		function myMap() {
+		    var mapOptions = {
+		        center: new google.maps.LatLng(-22.6379575, -47.1800989),
+		        zoom: 10,
+		        mapTypeId: google.maps.MapTypeId.HYBRID
+		    }
+			var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+		}
 	</script>
+
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
 	
 </body>
 </html>

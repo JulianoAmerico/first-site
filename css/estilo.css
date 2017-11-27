@@ -119,6 +119,15 @@ img.img-slide{
 	/*width: 70%;*/
 }
 
+/* Contato */
+
+.input-area{
+	width: 300px;
+	padding: 5px;
+	margin: 10px 0;
+}
+
+
 /* Rodapé */
 
 footer#rodape{
