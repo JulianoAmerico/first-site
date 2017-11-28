@@ -3,16 +3,17 @@
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+@import url('https://fonts.googleapis.com/css?family=Lato');
 
 * {
 	box-sizing: border-box;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Lato', sans-serif;
 }
 
 body {
 	margin: 0;
 	padding: 0;
-	background-color: gainsboro;
+	background-color: rgba(220, 220, 220, 0.4);
 }
 
 /* Menu */
@@ -44,6 +45,7 @@ a.menu-link{
 	padding: 2% 0;
 	display: block;
 	float: left;
+	text-transform: uppercase;
 }
 
 a.menu-link:visited{
@@ -64,11 +66,11 @@ a.menu-link:hover{
 }
 
 h1.titulos-secao{
-	font-size: 3em;
+	font-size: 4em;
 	text-align: center;
 	margin: 10% 0;
 	text-transform: uppercase;
-	color: darkgray;
+	color: rgba(128, 128, 128, 0.7);
 }
 
 /* Home */
@@ -90,11 +92,15 @@ h1#titulo-principal{
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -330%);
+	transform: translate(-50%, -180%);
 	color: white;
-	font-size: 3em;
+	font-size: 4em;
 	text-align: center;
-	/* text-transform: uppercase; */
+	text-transform: uppercase;
+	background-color: rgba(0, 0, 0, 0.5);
+	width: 80%;
+	padding: 50px;
+
 }
 
 /* Quem Somos */
