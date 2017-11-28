@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="../css/grid.css"/>
 	<link rel="stylesheet" href="../css/slideshow.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
 </head>
 <body>
 	<header>
@@ -134,11 +135,11 @@
 
 		<div class="flex-row">
 			<div class="flex-column flex-column-6">
-				<form class="formulario" action="action_page.php" method="post">
+				<form name="formulario-contato" class="formulario" action="action_page.php" method="post" onsubmit="return validaFormulario()">
 					
-					Nome <br><input class="input-area" type="text" name="nome" autofocus placeholder="Seu nome"/><br/>
-					E-mail <br><input class="input-area" type="email" name="email" placeholder="fulano@fulano.com"><br/>
-					Mensagem <br><textarea class="input-area" name="msg" rows="10" cols="30" placeholder="Sua mensagem aqui..."></textarea><br>
+					Nome <br><input class="input-area" type="text" name="nome" autofocus placeholder="Seu nome" required/><br/>
+					E-mail <br><input class="input-area" type="email" name="email" placeholder="fulano@fulano.com" required><br/>
+					Mensagem <br><textarea class="input-area" name="msg" rows="10" cols="30" placeholder="Sua mensagem aqui..." required></textarea><br>
 					<input class="btn" type="submit" value="Enviar"/>
 
 				</form>
@@ -165,6 +166,7 @@
 	</div>
 
 	<script>
+
 		var slideIndex = 0;//Actual slide
 		showSlides();//call the function below
 
@@ -201,6 +203,8 @@
 
 	 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBliroxlqRE79Yxx6uhWdWCZxto5wJ3YUc&callback=myMap" type="text/javascript">
 	 </script>
+
+	 <script type="text/javascript" src="../js/funcoes.js"></script>
 	
 </body>
 </html>
