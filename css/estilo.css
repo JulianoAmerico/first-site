@@ -16,6 +16,10 @@ body {
 	background-color: rgba(220, 220, 220, 0.4);
 }
 
+.espaco-topo{
+	margin-top: 40px;
+}
+
 /* Menu */
 header{
 	position: fixed;
@@ -141,12 +145,34 @@ img.img-slide{
 	width: 300px;
 	padding: 5px;
 	margin: 10px 0;
+	border-radius: 3px;
+	border: 1px solid lightgrey;
 }
 
 .formulario{
 	margin-top: 15px;
 }
 
+.btn{
+	border: 1px solid navy;
+	background-color: navy;
+	color: white;
+	border-radius: 3px;
+	font-weight: bold;
+	padding: 5px;
+}
+
+.titulo-de-contato{
+	font-size: 1.5em;
+	font-weight: bold;
+	/* color: rgba(128, 128, 128, 0.7); */
+
+}
+
+.alinhamento-contato{
+	padding-left: 100px;
+	color: rgba(0, 0, 0, 0.9);
+}
 
 /* Rodapé */
 

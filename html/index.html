@@ -132,15 +132,26 @@
 		<div id="googleMap" style="width:100%;height:400px;"></div>
 
 
-		<div class="flex-row formulario">
-			<form action="action_page.php" method="post">
-				
-				Nome: <br><input class="input-area" type="text" name="nome" placeholder="Seu nome"/><br/>
-				E-mail: <br><input class="input-area" type="email" name="email" placeholder="fulano@fulano.com"><br/>
-				Mensagem: <br><textarea class="input-area" name="msg" rows="10" cols="30" placeholder="Sua mensagem aqui..."></textarea><br>
-				<input type="submit" value="Enviar"/>
+		<div class="flex-row">
+			<div class="flex-column flex-column-6">
+				<form class="formulario" action="action_page.php" method="post">
+					
+					Nome <br><input class="input-area" type="text" name="nome" autofocus placeholder="Seu nome"/><br/>
+					E-mail <br><input class="input-area" type="email" name="email" placeholder="fulano@fulano.com"><br/>
+					Mensagem <br><textarea class="input-area" name="msg" rows="10" cols="30" placeholder="Sua mensagem aqui..."></textarea><br>
+					<input class="btn" type="submit" value="Enviar"/>
 
-			</form>
+				</form>
+			</div>
+
+			<div class="flex-column flex-column-6 alinhamento-contato">
+				<p class="titulo-de-contato">Atendimento</p>
+				<p><b>Telefone:</b> 01 9999-9999</p>
+				<p><b>E-mail:</b> atendimento@atendimento.com.br</p>
+				<p class="titulo-de-contato espaco-topo">Departamento Comercial</p>
+				<p><b>Telefone:</b> 02 8888-8888</p>
+				<p><b>E-mail:</b> comercial@comercial.com.br</p>
+			</div>
 		</div>
 	</section>
 	
